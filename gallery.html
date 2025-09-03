@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CyBearPi Gallery</title>
+    <style>
+        /* Global body style */
+        body {
+            font-family: Verdana;
+            background: lightsteelblue;
+            margin: 0;
+            padding: 20px;
+            color: rebeccapurple;
+        }
+
+        /* Heading style */
+        h1 { text-align: center; }
+
+        /* Container for all photos */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Individual photo container */
+        .photo {
+            margin: 10px;
+            border: 5px solid rebeccapurple;
+            background: white;
+        }
+
+        /* Change border color and enlarge photo on hover */
+        .photo:hover{ 
+            border: 7px solid hotpink; 
+            transform: scale(1.2);
+        }
+        
+        /* Image style inside photo container */
+        .photo img {
+            max-width: 400px;
+            height: auto;
+            display: block;
+        }
+        
+        /* Filename label below photo */
+        .filename {
+            text-align: center;
+            font-size: 14px;
+            color: lightyellow;
+            padding: 2px;
+            background-color: rebeccapurple;
+        }
+
+        /* Change text color and weight and background color on hover */
+        .photo:hover .filename{
+            color: black;
+            font-weight: bold;
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <!-- Page title -->
+    <h1>CyBear Photo Gallery</h1>
+    <!-- Container for all photos -->
+    <div class="gallery">
+        <!-- Looping over all photos passed from Flask template -->
+        {% for photo in photos %}
+            <div class="photo">
+                <!-- Clickable photos, opened in full size in new browser tab -->
+                <a href="/image/{{ photo._id }}" target="_blank">
+                    <img src="/image/{{ photo._id }}" alt="{{ photo.filename }}">
+                </a>
+                <!-- Displaying filename below photo -->
+                <div class="filename">
+                    {{ photo.filename }}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
