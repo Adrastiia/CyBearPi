@@ -3,7 +3,8 @@ A prototype smart toy built on Raspberry Pi that demonstrates the cybersecurity 
 The project is part of research on **cybersecurity in IoT**, with a focus on privacy and data protection in smart toys.  
 Developed as a part of the final assignment at VERN' University.
 
-[medo_f.bmp](https://github.com/user-attachments/files/22127469/medo_f.bmp)
+
+<img src="https://github.com/user-attachments/files/22127572/medo_f.bmp" alt="">
 
 ---
 
