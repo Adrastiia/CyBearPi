@@ -5,6 +5,7 @@ Developed as a part of the final assignment at VERN' University.
 
 
 <img src="https://github.com/user-attachments/files/22127572/medo_f.bmp" alt="">
+<img src="https://github.com/user-attachments/assets/85162717-4891-463d-bcb6-38f6355f742d" alt="">
 
 ---
 
