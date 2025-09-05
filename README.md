@@ -33,7 +33,7 @@ This toy was intentionally built with weak configurations to demonstrate:
 
 ---
 
-Project Goals
+## Project Goals
 - Raise awareness about cybersecurity risks in children’s IoT toys.
 - Highlight risks of hardcoded credentials, weak access control, and unencrypted communication.
 - Provide a controlled test environment for penetration testing.
